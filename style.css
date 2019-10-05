@@ -1,3 +1,9 @@
+body {
+	background-color: #32A8CC;
+	font-family: 'Montserrat', sans-serif;
+	color: #EDEDEB;
+}
+
 #hello {
 	font-size: 40px;
 	text-align: center;
