@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Chronic pain management app</title>
+  </head>
+  <body>
+  <div id="welcome">
+  <p id="hello"></p>
+  <p>How is your pain today?</p>
+<div onmouseover="pain1()" id="debilitating">😣</div>
+<div onmouseover="pain2()" id="intense">☹️</div>
+<div onmouseover="pain3()" id="mild">😕</div>
+<div onmouseover="pain4()" id="nopain">🙂</div>
+<p id="nameOfPain"></p>
+</div>
+  </body>
+</html>
+<script>
+var current = new Date();
+var time = current.getHours()
+var name = "Test Person"
+if (5 <= time < 12) {
+	document.getElementById("hello").innerHTML = "Good morning, " + name + "!"
+} else if (12 <= time < 18) {
+	document.getElementById("hello").innerHTML = "Good afternoon, " + name + "!"
+} else {
+	document.getElementById("hello").innerHTML = "Good evening, " + name + "!"
+}
+
+pain1() {
+	document.getElementById("hello").innerHTML = "Test"
+}
+pain2() {
+
+}
+pain3() {
+
+}
+pain4() {
+
+}
+</script>
