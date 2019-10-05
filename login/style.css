@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/footerimage.png");
+	background-image: url("../img/footerimage.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-attachment:fixed;
@@ -16,7 +16,7 @@ body {
 	width: 100%;
 	position: absolute;
   	left: 50%;
-  	top: 40%;
+  	top: 43%;
 	transform: translate(-50%, -50%)
 }
 #maincontent p {

@@ -1,46 +1,26 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 <html>
   <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Chronic pain management app</title>
+    <title>URSA</title>
   </head>
   <body>
-    <div id="welcome">
-      <p id="hello"></p>
-      <p id="pain_inquiry">How is your pain today?</p>
-      <div onmouseover="pain1()" id="debilitating">😣</div>
-      <div onmouseover="pain2()" id="intense">☹️</div>
-      <div onmouseover="pain3()" id="mild">😕</div>
-      <div onmouseover="pain4()" id="nopain">🙂</div>
-      <p id="nameOfPain"></p>
-    </div>
+  <header>
+  	<div id="logo"><img width="15%" src="img/logo.png"></div>
+  </header>
+  <div id="maincontent">
+  	<h1>Chronic Pain Sucks!</h1>
+  	<p>Here at URSA, we help our users monitor and record their symptoms, as well as categorize and provide solutions that are uniquely <strong>you</strong>-approved.
+  	<div id="buttons">
+  		<div id="join">Join</div>
+  		<div onclick="redirect()" id="signin">Sign In</div>
+  	</div>
+  </div>
   </body>
+  <script type="text/javascript">
+    function redirect() {
+        window.location.href = "login/index.html"
+    }
+  </script>
 </html>
-<script>
-  var current = new Date();
-  var time = current.getHours()
-  var name = "Test Person"
-  if (5 <= time < 12) {
-    document.getElementById("hello").innerHTML = "Good morning, " + name + "!"
-  } else if (12 <= time < 18) {
-    document.getElementById("hello").innerHTML = "Good afternoon, " + name + "!"
-  } else {
-    document.getElementById("hello").innerHTML = "Good evening, " + name + "!"
-  }
-
-  pain1() {
-    document.getElementById("hello").innerHTML = "Test"
-  }
-  pain2() {
-
-  }
-  pain3() {
-
-  }
-  pain4() {
-
-  }
-</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>URSA</title>
+  </head>
+  <body>
+  <header>
+  	<div id="logo"><img width="15%" src="../img/logo.png"></div>
+  </header>
+  <div id="maincontent">
+  	<h1>Welcome Back!</h1>
+  	<p id="check">Please enter your login info.</p>
+    <br />
+    <p>Username: <input type="text" id="username"></p>
+    <br />
+    <p>Password: <input type="password" id="password"></p>
+    <br />
+    <p><input onclick="login()" type="submit" name="login"></p>
+  </div>
+  </body>
+  <script type="text/javascript">
+    function login() {
+      if (document.getElementById("username").value == "Test_person" && document.getElementById("password").value == "password"){
+        window.location.href = "../rating/index.html"
+      } else {
+        document.getElementById("check").innerHTML = "Incorrect username or password."
+        document.getElementById("check").style.color = "red";
+      }
+  }
+  </script>
+</html>
