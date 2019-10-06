@@ -22,6 +22,10 @@ p {
   	top: 40%;
 	transform: translate(-50%, -50%)
 }
+textarea {
+	width: 300px;
+	height:200px;
+}
 #ok {
 	background-color: #3A3A3A;
 	color: #EDEDEB;
@@ -33,6 +37,22 @@ p {
 	display: inline-block;
 
 }
+#continuebutton {
+	background-color: #3A3A3A;
+	color: #EDEDEB;
+	border-radius: 20px;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	visibility: hidden;
+
+}
+#uppersection, #lowersection {
+	visibility: hidden;
+	display: inline-block;
+}
 #debilitating, #intense, #mild, #nopain {
 	font-family: sans-serif;
 	font-size: 100px;
@@ -43,7 +63,11 @@ p {
 	text-align: center;
 	transition:all 0.2s;
 }
-
+#choices, #uppersection, #lowersection {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
 #debilitating:hover, #intense:hover, #mild:hover, #nopain:hover {
 	font-size: 120px;
 	opacity: 1;

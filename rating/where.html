@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Chronic pain management app</title>
+  </head>
+  <body>
+  <div id="welcome">
+  <h1>Where is your pain located?</h1>
+  <p id="nameOfPain">Select option(s) below.</p>
+  <div id="choices">
+  Upper Body <input type="checkbox" id="upper" onclick="upper()">
+  Lower Body <input type="checkbox" id="lower" onclick="lower()">
+  <br />
+  <div id="uppersection">
+    Head <input type="checkbox"><br />
+    Mouth <input type="checkbox"><br />
+    Neck <input type="checkbox"><br />
+    Shoulders <input type="checkbox"><br />
+    Chest <input type="checkbox"><br />
+    Arms <input type="checkbox"><br />
+    Hands <input type="checkbox"><br />
+    Other <input type="checkbox"><br />
+  </div>
+  <div id="lowersection">
+    Back <input type="checkbox"><br />
+    Stomach <input type="checkbox"><br />
+    Hips <input type="checkbox"><br />
+    Legs <input type="checkbox"><br />
+    Knees <input type="checkbox"><br />
+    Feet <input type="checkbox"><br />
+    Other <input type="checkbox"><br />
+  </div>
+  <div onclick="redirect()" id="continuebutton">Submit</div>
+</div>
+  </body>
+    <script type="text/javascript">
+      var uppercheck = document.getElementById("upper")
+      var lowercheck = document.getElementById("lower")
+      var uppersect = document.getElementById("uppersection")
+      var lowersect = document.getElementById("lowersection")
+      var cont = document.getElementById("continuebutton")
+    function upper() {
+      if (uppercheck.checked == true){
+        uppersect.style.visibility = "visible"
+        cont.style.visibility = "visible"
+      } else {
+      uppersect.style.visibility = "hidden"
+    }
+  }
+    function lower() {
+      if (lowercheck.checked == true){
+        lowersect.style.visibility = "visible"
+        cont.style.visibility = "visible"
+    } else {
+      lowersect.style.visibility = "hidden"
+    }
+  }
+    function redirect() {
+        window.location.href = "../dashboard/index.html"
+    }
+  </script>
+</html>

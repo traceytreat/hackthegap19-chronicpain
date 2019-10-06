@@ -10,17 +10,17 @@
   <div id="welcome">
   <p id="hello"></p>
   <p id="nameOfPain">How is your pain level today?</p>
-<div onmouseover="pain1()" onmouseout="makeBlank()" onclick="painClicked('debilitating')" id="debilitating">😣<p id = "emojitext">Debilitating</p> </div>
-<div onmouseover="pain2()" onmouseout="makeBlank()" onclick="painClicked('intense')" id="intense">😔<p id = "emojitext">Intense</p> </div>
-<div onmouseover="pain3()" onmouseout="makeBlank()" onclick="painClicked('mild')" id="mild">😕<p id = "emojitext">Mild</p> </div>
-<div onmouseover="pain4()" onmouseout="makeBlank()" onclick="painClicked('nopain')" id="nopain">🙂<p id = "emojitext">No Pain</p> </div>
+<div onmouseover="pain1()" onmouseout="makeBlank()" onclick="painClicked('debilitating')" id="debilitating"><img src="../img/debilitatingpain.png"><p id = "emojitext">Debilitating</p> </div>
+<div onmouseover="pain2()" onmouseout="makeBlank()" onclick="painClicked('intense')" id="intense"><img src="../img/moderatepain.png"><p id = "emojitext">Intense</p> </div>
+<div onmouseover="pain3()" onmouseout="makeBlank()" onclick="painClicked('mild')" id="mild"><img src="../img/mildpain.png"><p id = "emojitext">Mild</p> </div>
+<div onmouseover="pain4()" onmouseout="makeBlank()" onclick="painClicked('nopain')" id="nopain"><img src="../img/moderatepain.png"><p id = "emojitext">No Pain</p> </div>
 </div>
 
   </body>
 </html>
 <script>
 var current = new Date();
-var name = "Test Person"
+var name = "Ursula_Major"
 if (current.getHours() > 5 && current.getHours() < 12) {
 	document.getElementById("hello").innerHTML = "Good morning, " + name + "!"
 } else if (current.getHours() > 11 && current.getHours() < 17) {
@@ -45,11 +45,10 @@ function makeBlank() {
 	document.getElementById("nameOfPain").innerHTML = "How is your pain level today?"
 }
 function painClicked(n) {
-  document.getElementById(n).style.transform = "rotate(180deg)"
   if (n == 'nopain'){
     window.location.href = "lowpain.html"
   } else{
-    window.location.href = "http://cnn.com"
+    window.location.href = "highpain.html"
   }
 
 }

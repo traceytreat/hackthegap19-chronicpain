@@ -57,7 +57,7 @@ p {
 }
 #join {
 	background-color: #32A8CC;
-	color: #EDEDEB;
+	color: #3A3A3A;
 	border-radius: 20px;
 }
 #signin {
@@ -66,8 +66,6 @@ p {
     border-radius: 20px;
 }
 header img {
-	background-color: #32A8CC;
-    border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
